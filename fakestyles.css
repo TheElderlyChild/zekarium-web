@@ -1,0 +1,381 @@
+body  {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:  #f5f5f5;
+    color:  #333;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 0 40px;
+    background-color: #333;
+    color: #fff;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav img  {
+    height: 50px;
+}
+
+nav ul  {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav ul li  {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a  {
+    color:  #fff;
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav ul li a:hover  {
+    background-color:  #555;
+    border-radius: 5px;
+}
+
+section  {
+    padding: 0px 0px 0px 20px;
+    text-align: center;
+}
+
+section:nth-of-type(even) {
+    background-color: #A4B3C4;
+    color: #000;
+}
+footer  {
+    padding: 20px;
+    background-color:  #333;
+    color:  #fff;
+    text-align: center;
+    position: relative;
+}
+
+footer ul  {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li  {
+    display: inline;
+    margin-left: 20px;
+}
+
+footer ul li a  {
+    color:  #fff;
+    text-decoration: none;
+}
+
+#contact  {
+    padding-top: 70px; /* Make the contact section start below the nav bar */
+}
+
+#contact form  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contact form input,
+#contact form textarea  {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+button {
+    padding: 14px 28px;
+    background-color: #42648E;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #2f4a6b;
+    transform: translateY(-2px);
+}
+
+#about {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Styling for image1, image2 and image3 in sections */
+section img {
+    max-width: 100%;
+    height: auto;
+    margin: 0; /* Add some space above and below the image */
+    padding: 0;
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 600px;
+}
+
+#home img,
+#product img {
+    max-width: 650px;
+}
+
+.section-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    gap: 20px;
+}
+
+/* Left side text */
+.text-content {
+    flex: 1;
+    text-align: left;
+}
+
+/* Right side image */
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer layout */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+/* Footer links */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Contact section */
+.footer-contact h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.footer-contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+/* Copyright */
+.footer-copy {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 200px;
+}
+
+.logo-text {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#about .image-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 👈 change this */
+}
+
+#about .image-content img {
+    align-self: center; /* 👈 keeps image centered */
+}
+
+#about .image-content button {
+    margin-top: 20px;
+}
+
+/* Privacy Page Layout */
+.policy-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 20px;
+    line-height: 1.8;
+    text-align: left; /* 👈 IMPORTANT */
+}
+
+/* Headings */
+.policy-container h2 {
+    margin-top: 40px;
+    color: #42648E;
+}
+
+.policy-container h3 {
+    margin-top: 20px;
+}
+
+/* Lists */
+.policy-container ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.policy-container li {
+    margin-bottom: 8px;
+}
+
+/* Header */
+.policy-header {
+    background-color: #42648E;
+    color: #42648E;
+    text-align: center;
+    padding: 80px 20px 40px;
+}
+
+/* HERO */
+.about-hero {
+    background-color: #42648E;
+    color: #42648E;
+    text-align: center;
+    padding: 100px 20px 60px;
+}
+
+.about-hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+/* MAIN CONTENT */
+.about-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 20px;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.about-container p {
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+/* Highlight statement */
+.highlight {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+/* Vision & Mission */
+.about-split {
+    display: flex;
+    gap: 30px;
+    padding: 60px 20px;
+    background-color: #A4B3C4;
+    flex-wrap: wrap;
+}
+
+.about-card {
+    flex: 1;
+    min-width: 280px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.about-card h2 {
+    margin-bottom: 15px;
+    color: #42648E;
+}
+
+#home h1 {
+    font-size: 44px;
+}
+
+#home h2 {
+    font-size: 28px;
+}
+
+#product h1 {
+    font-size: 44px;
+}
+
+#product p {
+    font-size: 28px;
+}
+
+#home button {
+    font-size: 32px;
+    padding: 28px 36px;
+    border-radius: 40px;
+    margin-top: 40px;
+}
+
+button {
+    font-size: 32px;
+}
