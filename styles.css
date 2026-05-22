@@ -29,8 +29,12 @@ nav {
   background-color: #3a3a3a;
   padding: 15px 40px;
   top: 0;
-  position: sticky;
-  font-size: 20px
+  left:0;
+  right: 0;
+  position: fixed;
+  z-index: 50;
+  font-size: 20px;
+ 
 }
 
 .logo-container {
@@ -41,6 +45,7 @@ nav {
 .logo-container img {
   height: 50px;
   margin-right: 10px;
+  
 }
 
 .logo-text {
@@ -327,13 +332,28 @@ footer {
     padding: 100px 20px 60px;
 }
 
+
 .about-hero h1 {
     margin-bottom: 10px;
+  
 }
+
+.about-container {
+  margin: 0 auto;
+  padding: 60px 24px;
+ 
+
+}
+
+.about-container > p {
+margin-bottom: 16px;
+}
+
 
 .tagline {
     font-size: 24px;
     opacity: 0.9;
+    
 }
 
 /* Highlight statement */
