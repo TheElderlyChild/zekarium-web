@@ -12,14 +12,16 @@ body {
 }
 
 h1 {
-    font-size: 44px;
+  font-size: 44px;
 }
 
 h2 {
-    font-size: 32px;
+  font-size: 32px;
 }
 
-p {font-size: 18px;}
+p {
+  font-size: 18px;
+}
 
 /* NAVBAR */
 nav {
@@ -29,12 +31,11 @@ nav {
   background-color: #3a3a3a;
   padding: 15px 40px;
   top: 0;
-  left:0;
+  left: 0;
   right: 0;
   position: fixed;
   z-index: 50;
   font-size: 20px;
- 
 }
 
 .logo-container {
@@ -45,7 +46,6 @@ nav {
 .logo-container img {
   height: 50px;
   margin-right: 10px;
-  
 }
 
 .logo-text {
@@ -107,7 +107,7 @@ section {
 }
 
 #home .text-content {
-  text-align: center; 
+  text-align: center;
 }
 
 /* BUTTONS */
@@ -193,7 +193,7 @@ button:hover {
   background-color: #f5f5f5;
 }
 
-#product button{
+#product button {
   padding: 16px 24px;
 }
 
@@ -208,10 +208,9 @@ button:hover {
   margin-bottom: 20px;
 }
 
-#contact button{
+#contact button {
   padding: 16px 24px;
 }
-
 
 form {
   max-width: 500px;
@@ -289,106 +288,100 @@ footer {
 
 /* Privacy Page Layout */
 .policy-container {
-    max-width: 900px;
-    margin: auto;
-    padding: 60px 20px;
-    line-height: 1.8;
-    text-align: left; /* 👈 IMPORTANT */
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 20px;
+  line-height: 1.8;
+  text-align: left; /* 👈 IMPORTANT */
 }
 
 /* Headings */
 .policy-container h2 {
-    margin-top: 40px;
-    color: #42648E;
+  margin-top: 40px;
+  color: #42648e;
 }
 
 .policy-container h3 {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 /* Lists */
 .policy-container ul {
-    padding-left: 20px;
-    margin-top: 10px;
+  padding-left: 20px;
+  margin-top: 10px;
 }
 
 .policy-container li {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 /* Header */
 .policy-header {
-    background-color: #42648E;
-    color: #42648E;
-    text-align: center;
-    padding: 80px 20px 40px;
+  background-color: #42648e;
+  color: #42648e;
+  text-align: center;
+  padding: 80px 20px 40px;
 }
 
 /* HERO */
 .about-hero {
-    background-color: #42648E;
-    color: white;
-    text-align: center;
-    padding: 100px 20px 60px;
+  background-color: #42648e;
+  color: white;
+  text-align: center;
+  padding: 100px 20px 60px;
 }
 
-
 .about-hero h1 {
-    margin-bottom: 10px;
-  
+  margin-bottom: 10px;
 }
 
 .about-container {
   margin: 0 auto;
   padding: 60px 24px;
- 
-
 }
 
 .about-container > p {
-margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
-
 .tagline {
-    font-size: 24px;
-    opacity: 0.9;
-    
+  font-size: 24px;
+  opacity: 0.9;
 }
 
 /* Highlight statement */
 .highlight {
-    font-weight: bold;
-    font-size: 20px;
-    margin-top: 30px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 30px;
 }
 
 /* Vision & Mission */
 .about-split {
-    display: flex;
-    gap: 30px;
-    padding: 60px 20px;
-    background-color: #A4B3C4;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 30px;
+  padding: 60px 20px;
+  background-color: #a4b3c4;
+  flex-wrap: wrap;
 }
 
 .about-card {
-    flex: 1;
-    min-width: 280px;
-    background: #fff;
-    padding: 30px;
-    border-radius: 16px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  flex: 1;
+  min-width: 280px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .about-card h2 {
-    margin-bottom: 15px;
-    color: #42648E;
+  margin-bottom: 15px;
+  color: #42648e;
 }
 
 /* PRODUCT HERO */
 .product-hero {
-  background: linear-gradient(to right, #42648E, #6f86a3);
+  background: linear-gradient(to right, #42648e, #6f86a3);
   color: white;
   text-align: center;
   padding: 120px 20px 80px;
@@ -456,7 +449,7 @@ margin-bottom: 16px;
   width: 250px; /* 👈 adjust if needed */
   height: auto;
   border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 /* Text */
@@ -475,7 +468,6 @@ margin-bottom: 16px;
 }
 
 @media (max-width: 768px) {
-
   .step {
     flex-direction: column;
     text-align: center;
@@ -534,4 +526,12 @@ margin-bottom: 16px;
 .audience-card ul {
   margin-top: 15px;
   padding-left: 20px;
+}
+.image-column {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.image-content {
+  margin-bottom: 5px;
 }
